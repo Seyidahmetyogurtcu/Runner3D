@@ -13,16 +13,12 @@ namespace Runner3D.Game
         private void OnDestroy()
         {
             EventManager.OnObstacleTriggerEnter -= MoveForward;
-
         }
 
         private void MoveForward()
         {
-            transform.position += new Vector3(0, 0, 1) * Time.deltaTime * GameManager.StickmanSpeed;
+            transform.position += new Vector3(0, 0, 1) * Time.deltaTime * GameManager.StickmanForwardSpeed;
         }
-        void Update()
-        {
 
-        }
     }
 }

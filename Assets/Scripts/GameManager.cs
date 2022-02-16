@@ -11,7 +11,8 @@ namespace Runner3D.Core
       
         public static State playerState;
 
-        public const int StickmanSpeed = 10;
+        public const int StickmanForwardSpeed = 5;
+        public const float StickmanVecticalSpeed = 0.03f;
 
         private void Awake()
         {
@@ -45,7 +46,8 @@ namespace Runner3D.Core
                     //do
                     break;
                 case State.Finish:
-                    //do
+                    //doAnimation
+                    //set position
                     break;
             }
         }

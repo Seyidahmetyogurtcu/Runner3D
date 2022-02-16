@@ -4,18 +4,20 @@ using UnityEngine;
 
 namespace Runner3D.Game
 {
-    public class ScoreManager : MonoBehaviour
+    public static class ScoreManager
     {
-        // Start is called before the first frame update
-        void Start()
+        public static int score = 0;
+        public static string Score
         {
-
+            get
+            { 
+                return "Score: " + score; 
+            }
+            set {}
         }
-
-        // Update is called once per frame
-        void Update()
+        public static void ScoreUp()
         {
-
+            score++;
         }
     }
 }
